@@ -1,6 +1,4 @@
 import logo from "../src/netflix/assets/netflix_logo.png";
-import image1 from "../src/netflix/assets/media/media0.jpg";
-import image2 from "../src/netflix/assets/media/media1.jpg";
 import avatar from "../src/netflix/assets/avatar.png";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css"; // link the boostrap.css
@@ -20,9 +18,9 @@ function App() {
 
       <GenreComponent />
 
-      <TrendingNowComponent title="Trending Now" image1={image1} image2={image2} />
-      <WatchLaterComponent title="Trending Now" image1={image1} image2={image2} />
-      <NewReleasesComponent title="Trending Now" image1={image1} image2={image2} />
+      <TrendingNowComponent title="Trending Now" classes="movie-cover img-fluid rendered-image" />
+      <WatchLaterComponent title="Watch Later" classes="movie-cover img-fluid rendered-image" />
+      <NewReleasesComponent title="New Releases" classes="movie-cover img-fluid rendered-image" />
       <FooterComponent />
     </div>
   );

@@ -38,53 +38,22 @@ class TrendingNowComponent extends Component {
             <div className="carousel-item active">
               <div className="movie-row">
                 <div className="row m-n-2">
-                  {this.state.movies.map((movie) => (
+                  {this.state.movies.slice(0, 6).map((movie) => (
                     <Col className="col-md-2 px-2" key={movie.imdbID}>
-                      <img className="movie-cover img-fluid rendered-image" src={movie.Poster} />
+                      <img className={this.props.classes} src={movie.Poster} />
                     </Col>
                   ))}
-                  {/* <div className="col-md-2 px-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image1} />
-                  </div>
-                  <div class="col-md-2 px-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image2} />
-                  </div>
-                  <div class="col-md-2 px-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image1} />
-                  </div>
-                  <div class="col-md-2 px-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image2} />
-                  </div>
-                  <div class="col-md-2 px-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image1} />
-                  </div>
-                  <div class="col-md-2 px-2">
-                    <img class="movie-cover img-fluid rendered-image" src={this.props.image2} />
-                  </div> */}
                 </div>
               </div>
             </div>
             <div className="carousel-item">
               <div className="movie-row">
                 <div className="row">
-                  <div className="col-md-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image1} />
-                  </div>
-                  <div class="col-md-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image2} />
-                  </div>
-                  <div class="col-md-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image1} />
-                  </div>
-                  <div class="col-md-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image2} />
-                  </div>
-                  <div class="col-md-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image1} />
-                  </div>
-                  <div class="col-md-2">
-                    <img className="movie-cover img-fluid rendered-image" src={this.props.image2} />
-                  </div>
+                  {this.state.movies.slice(7).map((movie) => (
+                    <Col className="col-md-2 px-2" key={movie.imdbID}>
+                      <img className={this.props.classes} src={movie.Poster} />
+                    </Col>
+                  ))}
                 </div>
               </div>
             </div>
