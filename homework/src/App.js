@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "../src/netflix/assets/netflix_logo.png";
+import image1 from "../src/netflix/assets/media/media0.jpg";
+import image2 from "../src/netflix/assets/media/media1.jpg";
+import avatar from "../src/netflix/assets/avatar.png";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css"; // link the boostrap.css
+
+import NavbarComponent from "./components/NavbarComponent";
+import GenreComponent from "./components/GenreComponent";
+import GalleryComponent from "./components/GalleryComponent";
+// import { Col, Container, Row } from "react-bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavbarComponent logo={logo} avatar={avatar} />
+      {/* <Container className="container-fluid">
+        <Row>
+          <Col lg={12}> */}
+      <GenreComponent />
+      {/* </Col>
+        </Row>
+      </Container> */}
+      <GalleryComponent image1={image1} image2={image2} />
     </div>
   );
 }

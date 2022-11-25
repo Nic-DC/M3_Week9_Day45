@@ -36,3 +36,62 @@
     transform: rotate(360deg);
   }
 }
+
+/* -----------------------------------------------------
+NAVBAR -> NavbarComponent.jsx
+------------------------------------------------------*/
+.bg-black {
+  background-color: black;
+}
+
+#navbarSupportedContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-img {
+  width: 7rem;
+  object-fit: cover;
+}
+
+#profile-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#avatar,
+#avatar-small {
+  width: 2.5rem;
+  object-fit: cover;
+}
+
+#avatar-small {
+  width: 1rem;
+}
+
+/* -----------------------------------------------------
+GENRE -> GenreComponent.jsx
+------------------------------------------------------*/
+
+#genreDetails {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -----------------------------------------------------
+GALLERY -> GalleryComponent.jsx
+------------------------------------------------------*/
+#movieGallery {
+  background-color: black;
+  padding: 1rem 1.5rem;
+}
