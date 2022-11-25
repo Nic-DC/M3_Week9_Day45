@@ -7,21 +7,21 @@ import "bootstrap/dist/css/bootstrap.min.css"; // link the boostrap.css
 
 import NavbarComponent from "./components/NavbarComponent";
 import GenreComponent from "./components/GenreComponent";
-import GalleryComponent from "./components/GalleryComponent";
-// import { Col, Container, Row } from "react-bootstrap";
+// import GalleryComponent from "./components/GalleryComponent";
+import TrendingNowComponent from "./components/TrendingNowComponent";
+import WatchLaterComponent from "./components/WatchLaterComponent";
+import NewReleasesComponent from "./components/NewReleasesComponent";
 
 function App() {
   return (
     <div>
       <NavbarComponent logo={logo} avatar={avatar} />
-      {/* <Container className="container-fluid">
-        <Row>
-          <Col lg={12}> */}
+
       <GenreComponent />
-      {/* </Col>
-        </Row>
-      </Container> */}
-      <GalleryComponent image1={image1} image2={image2} />
+
+      <TrendingNowComponent title="Trending Now" image1={image1} image2={image2} />
+      <WatchLaterComponent title="Trending Now" image1={image1} image2={image2} />
+      <NewReleasesComponent title="Trending Now" image1={image1} image2={image2} />
     </div>
   );
 }

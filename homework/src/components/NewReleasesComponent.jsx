@@ -1,6 +1,34 @@
 import { Component } from "react";
+import { Col } from "react-bootstrap";
 
-class GalleryComponent extends Component {
+class NewReleasesComponent extends Component {
+  state = {
+    movies: [],
+  };
+
+  renderMovies = async () => {
+    try {
+      let response = await fetch(` https://www.omdbapi.com/?i=tt3896198&apikey=d7877f6d&s=the+hobbit`);
+
+      if (response.ok) {
+        let movieList = await response.json();
+        console.log({ movieList });
+
+        this.setState({
+          movies: movieList.Search,
+        });
+      } else {
+        console.log("something wrong when fetching");
+      }
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
+
+  componentDidMount() {
+    this.renderMovies();
+  }
+
   render() {
     return (
       <div className="movie-gallery container-fluid" id="movieGallery">
@@ -10,7 +38,12 @@ class GalleryComponent extends Component {
             <div className="carousel-item active">
               <div className="movie-row">
                 <div className="row m-n-2">
-                  <div className="col-md-2 px-2">
+                  {this.state.movies.map((movie) => (
+                    <Col className="col-md-2 px-2" key={movie.imdbID}>
+                      <img className="movie-cover img-fluid rendered-image" src={movie.Poster} />
+                    </Col>
+                  ))}
+                  {/* <div className="col-md-2 px-2">
                     <img className="movie-cover img-fluid rendered-image" src={this.props.image1} />
                   </div>
                   <div class="col-md-2 px-2">
@@ -27,7 +60,7 @@ class GalleryComponent extends Component {
                   </div>
                   <div class="col-md-2 px-2">
                     <img class="movie-cover img-fluid rendered-image" src={this.props.image2} />
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -69,4 +102,4 @@ class GalleryComponent extends Component {
     );
   }
 }
-export default GalleryComponent;
+export default NewReleasesComponent;

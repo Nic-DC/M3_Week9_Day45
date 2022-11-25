@@ -95,3 +95,12 @@ GALLERY -> GalleryComponent.jsx
   background-color: black;
   padding: 1rem 1.5rem;
 }
+
+.rendered-image {
+  cursor: pointer;
+  transition: transfrom 350ms ease-out;
+}
+
+.rendered-image:hover {
+  transform: scale(1.05);
+}
