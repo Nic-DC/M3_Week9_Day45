@@ -117,3 +117,12 @@ FOOTER -> FooterComponent.jsx
   justify-content: start;
   align-items: center;
 }
+
+/* -----------------------------------------------------
+UTILITY CLASSES
+------------------------------------------------------*/
+
+.btn-bg {
+  color: black;
+  font-size: 0.85rem;
+}

@@ -49,7 +49,7 @@ class NewReleasesComponent extends Component {
             <div className="carousel-item">
               <div className="movie-row">
                 <div className="row">
-                  {this.state.movies.slice(7).map((movie) => (
+                  {this.state.movies.slice(6).map((movie) => (
                     <Col className="col-md-2 px-2" key={movie.imdbID}>
                       <img className={this.props.classes} src={movie.Poster} />
                     </Col>
