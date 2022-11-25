@@ -11,6 +11,7 @@ import GenreComponent from "./components/GenreComponent";
 import TrendingNowComponent from "./components/TrendingNowComponent";
 import WatchLaterComponent from "./components/WatchLaterComponent";
 import NewReleasesComponent from "./components/NewReleasesComponent";
+import FooterComponent from "./components/FooterComponent";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <TrendingNowComponent title="Trending Now" image1={image1} image2={image2} />
       <WatchLaterComponent title="Trending Now" image1={image1} image2={image2} />
       <NewReleasesComponent title="Trending Now" image1={image1} image2={image2} />
+      <FooterComponent />
     </div>
   );
 }

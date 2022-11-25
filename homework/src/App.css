@@ -89,7 +89,7 @@ GENRE -> GenreComponent.jsx
 }
 
 /* -----------------------------------------------------
-GALLERY -> GalleryComponent.jsx
+GALLERies -> 
 ------------------------------------------------------*/
 #movieGallery {
   background-color: black;
@@ -103,4 +103,17 @@ GALLERY -> GalleryComponent.jsx
 
 .rendered-image:hover {
   transform: scale(1.05);
+}
+
+/* -----------------------------------------------------
+FOOTER -> FooterComponent.jsx
+------------------------------------------------------*/
+#footer {
+  background-color: black;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
