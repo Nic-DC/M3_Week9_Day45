@@ -10,7 +10,7 @@ import TrendingNowComponent from "./components/TrendingNowComponent";
 import WatchLaterComponent from "./components/WatchLaterComponent";
 import NewReleasesComponent from "./components/NewReleasesComponent";
 import FooterComponent from "./components/FooterComponent";
-import DropdownComponent from "./components/DrowpdownComponent";
+// import DrowpdownAvatar from "./components/DrowpdownAvatar";
 
 function App() {
   return (
@@ -23,7 +23,6 @@ function App() {
       <WatchLaterComponent title="Watch Later" classes="movie-cover img-fluid rendered-image" />
       <NewReleasesComponent title="New Releases" classes="movie-cover img-fluid rendered-image" />
       <FooterComponent />
-      <DropdownComponent avatar={avatar} />
     </div>
   );
 }

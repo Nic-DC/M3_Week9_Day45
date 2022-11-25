@@ -1,19 +1,18 @@
 import { Component } from "react";
 import { Dropdown, DropdownButton } from "react-bootstrap";
 
-class DropdownComponent extends Component {
+class DropdownAvatar extends Component {
   render() {
     return (
       <div className="">
         <DropdownButton
-          id="dropdown-basic-button"
+          id="dropdown-button-drop-left"
           title={<img className="img-fluid" id="avatar" src={this.props.avatar} />}
-          a
-          key="Dark"
-          variant="Dark"
+          key="transparent"
+          variant="transparent"
         >
           <Dropdown.Item href="#/action-1" className="btn-bg">
-            {<img className="img-fluid" id="avatar-small" src={this.props.avatar} />} yo
+            {<img className="img-fluid mr-5" id="avatar-small" src={this.props.avatar} />} yo
           </Dropdown.Item>
           <Dropdown.Item href="#/action-2" className="btn-bg">
             Manage Profile
@@ -34,4 +33,4 @@ class DropdownComponent extends Component {
   }
 }
 
-export default DropdownComponent;
+export default DropdownAvatar;

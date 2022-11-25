@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import DropdownAvatar from "./DrowpdownAvatar";
 
 class NavbarComponent extends Component {
   render() {
@@ -96,7 +97,8 @@ class NavbarComponent extends Component {
                 </li>
 
                 <li class="nav-item">
-                  <div class="btn-group">
+                  <DropdownAvatar avatar={this.props.avatar} />
+                  {/* <div class="btn-group">
                     <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                       <img src={this.props.avatar} id="avatar" />
                     </button>
@@ -133,7 +135,7 @@ class NavbarComponent extends Component {
                         </a>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </li>
               </ul>
             </div>

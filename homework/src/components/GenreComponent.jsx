@@ -1,4 +1,5 @@
 import { Component } from "react";
+import DropdownGenres from "./DropdownGenres";
 
 class GenreComponent extends Component {
   render() {
@@ -6,7 +7,8 @@ class GenreComponent extends Component {
       <div class="genre-details container-fluid" id="genreDetails">
         <div class="space-between">
           <h3 class="text-light mr-5">TV Shows</h3>
-          <button class="btn btn-outline-light dropdown-toggle genre-button">Genres</button>
+          <DropdownGenres />
+          {/* <button class="btn btn-outline-light dropdown-toggle genre-button">Genres</button> */}
         </div>
         <div>
           <div class="btn-group me-2" role="group" aria-label="First group">
